@@ -1,7 +1,5 @@
 # Assistive Vision Caption Bot
 
-Final year project, B.Tech in Computer Engineering.
-
 Describes a photo in a sentence and reads it out loud, so a person who is blind or has low vision can find out what is in front of the camera.
 
 A CNN encoder (MobileNetV2 or InceptionV3, pretrained on ImageNet) turns the image into a feature vector. An LSTM decoder, initialised from that vector, writes the caption one word at a time with beam search. A Flask web app lets you take or upload a photo on a phone and speaks the caption with the browser's text to speech.
