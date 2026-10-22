@@ -90,8 +90,8 @@ The first run downloads the ImageNet weights for the CNN automatically.
 2. Run:
 
 ```python
-!git clone https://github.com/karishmagalande/Assistive Vision Caption Bot.git
-%cd Assistive Vision Caption Bot
+!git clone https://github.com/karishmagalande/Assistive-Vision-Caption-Bot.git
+%cd Assistive-Vision-Caption-Bot
 !pip install -q nltk gTTS
 # Upload kaggle.json (Kaggle > Settings > Create New Token) when prompted
 from google.colab import files; files.upload()
