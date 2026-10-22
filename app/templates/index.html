@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Assistive Vision Caption Bot</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <main>
+    <h1>Describe a photo</h1>
+    <p class="hint">Take or choose a photo. The description is read out loud.</p>
+
+    <label class="button" for="photo">Take or choose a photo</label>
+    <input id="photo" type="file" accept="image/*" capture="environment">
+
+    <img id="preview" alt="" hidden>
+
+    <p id="status" class="status" role="status" aria-live="polite"></p>
+    <p id="caption" class="caption" aria-live="assertive"></p>
+
+    <button id="repeat" class="button secondary" type="button" hidden>Read it again</button>
+  </main>
+  <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>

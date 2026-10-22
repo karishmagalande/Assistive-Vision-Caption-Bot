@@ -1,0 +1,6 @@
+tensorflow-cpu==2.21.0
+numpy>=1.26
+pillow>=10.0
+flask>=3.0
+gunicorn>=22.0
+gTTS>=2.5
